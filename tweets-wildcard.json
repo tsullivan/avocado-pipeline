@@ -1,0 +1,27 @@
+{
+  "template": "tweets-*",
+  "settings": {
+  },
+  "mappings": {
+    "avocado": {
+      "properties": {
+        "coordinates": {
+          "properties": {
+            "coordinates": {
+              "type": "geo_point",
+              "ignore_malformed": true
+            }
+          }
+        },
+        "geo": {
+          "properties": {
+            "coordinates": {
+              "type": "geo_point",
+              "ignore_malformed": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
