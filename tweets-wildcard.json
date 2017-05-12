@@ -1,7 +1,6 @@
 {
   "template": "tweets-*",
-  "settings": {
-  },
+  "settings": {},
   "mappings": {
     "avocado": {
       "properties": {
@@ -18,6 +17,19 @@
             "coordinates": {
               "type": "geo_point",
               "ignore_malformed": true
+            }
+          }
+        },
+        "text": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            },
+            "stop_analyzed": {
+              "type": "text",
+              "analyzer": "stop",
+              "fielddata": true
             }
           }
         }
