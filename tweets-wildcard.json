@@ -1,6 +1,19 @@
 {
   "template": "tweets-*",
-  "settings": {},
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "my_stop_analyzer": {
+          "type": "stop",
+          "stopwords": [
+            "t",
+            "co",
+            "https"
+          ]
+        }
+      }
+    }
+  },
   "mappings": {
     "avocado": {
       "properties": {
@@ -28,7 +41,7 @@
             },
             "stop_analyzed": {
               "type": "text",
-              "analyzer": "stop",
+              "analyzer": "my_stop_analyzer",
               "fielddata": true
             }
           }
