@@ -4,12 +4,7 @@
     "analysis": {
       "analyzer": {
         "my_stop_analyzer": {
-          "type": "stop",
-          "stopwords": [
-            "t",
-            "co",
-            "https"
-          ]
+          "type": "stop"
         }
       }
     }
