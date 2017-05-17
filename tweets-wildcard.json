@@ -41,6 +41,61 @@
               "fielddata": true
             }
           }
+        },
+        "quoted_status": {
+          "properties": {
+            "extended_tweet": {
+              "properties": {
+                "full_text": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword"
+                    },
+                    "stop_analyzed": {
+                      "type": "text",
+                      "analyzer": "my_stop_analyzer",
+                      "fielddata": true
+                    }
+                  }
+                }
+              }
+            },
+            "user": {
+              "properties": {
+                "description": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword"
+                    },
+                    "stop_analyzed": {
+                      "type": "text",
+                      "analyzer": "my_stop_analyzer",
+                      "fielddata": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "user": {
+          "properties": {
+            "description": {
+              "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  },
+                  "stop_analyzed": {
+                    "type": "text",
+                    "analyzer": "my_stop_analyzer",
+                    "fielddata": true
+                  }
+                }
+            }
+          }
         }
       }
     }
