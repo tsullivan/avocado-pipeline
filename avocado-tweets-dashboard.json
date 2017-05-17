@@ -6,13 +6,13 @@
       "title": "Avo Board",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"4c5031f0-c174-11e6-abd0-4bdb49995977\",\"panelId\":1,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a027c6e0-c173-11e6-986a-99f3d72760fe\",\"panelId\":2,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"ac4917d0-c173-11e6-986a-99f3d72760fe\",\"panelId\":3,\"row\":5,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"f90baab0-c173-11e6-986a-99f3d72760fe\",\"panelId\":4,\"row\":7,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"a9649480-c17e-11e6-912c-cbfd48250819\",\"panelId\":5,\"row\":1,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"164178a0-c23a-11e6-b1ce-a933cba97c19\",\"panelId\":8,\"row\":7,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"67796700-c23a-11e6-b1ce-a933cba97c19\",\"panelId\":9,\"row\":5,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"user.name\",\"user.description\",\"text\",\"user.lang\",\"user.url\"],\"id\":\"d76780b0-c15e-11e6-b8ec-f58a80978e3d\",\"panelId\":10,\"row\":9,\"size_x\":12,\"size_y\":4,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":4,\"id\":\"7fa1ce30-c3bb-11e6-be90-0d4b7bea5aa3\",\"panelId\":11,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"}]",
+      "panelsJSON": "[{\"col\":5,\"id\":\"4c5031f0-c174-11e6-abd0-4bdb49995977\",\"panelId\":1,\"panelIndex\":1,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a027c6e0-c173-11e6-986a-99f3d72760fe\",\"panelId\":2,\"panelIndex\":2,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ac4917d0-c173-11e6-986a-99f3d72760fe\",\"panelId\":3,\"panelIndex\":3,\"row\":7,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f90baab0-c173-11e6-986a-99f3d72760fe\",\"panelId\":4,\"panelIndex\":4,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"a9649480-c17e-11e6-912c-cbfd48250819\",\"panelId\":5,\"panelIndex\":5,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"67796700-c23a-11e6-b1ce-a933cba97c19\",\"panelId\":9,\"panelIndex\":7,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"user.name\",\"user.description\",\"text\",\"user.lang\",\"user.url\"],\"id\":\"d76780b0-c15e-11e6-b8ec-f58a80978e3d\",\"panelId\":10,\"panelIndex\":8,\"row\":13,\"size_x\":12,\"size_y\":4,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":9,\"id\":\"7fa1ce30-c3bb-11e6-be90-0d4b7bea5aa3\",\"panelId\":11,\"panelIndex\":9,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"a97b4670-36d2-11e7-bd51-05681ebc6703\",\"panelIndex\":10,\"row\":9,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b32f7280-36d3-11e7-bd51-05681ebc6703\",\"panelIndex\":11,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":3,\"id\":\"f5323310-373d-11e7-a84c-ef94d5c74259\",\"panelIndex\":12,\"row\":7,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"}]",
       "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-2\":{\"mapCenter\":[12.554563528593656,8.0859375],\"mapZoom\":2},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-8\":{\"vis\":{\"legendOpen\":true}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "uiStateJSON": "{\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"mapCenter\":[31.353636941500987,15.99609375],\"mapZoom\":2},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"legendOpen\":true}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
       "version": 1,
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
       }
     }
   },
@@ -36,49 +36,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"tweets-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:avocado\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
-      }
-    }
-  },
-  {
-    "_id": "4c5031f0-c174-11e6-abd0-4bdb49995977",
-    "_type": "visualization",
-    "_source": {
-      "title": "Tweets Count ES vs EN",
-      "visState": "{\"title\":\"Tweets Count ES vs EN\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=tweets-*, q='user.lang=en').cusum().label('EN') .es(index=tweets-*, q='user.lang=es').cusum().label('ES')\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "7fa1ce30-c3bb-11e6-be90-0d4b7bea5aa3",
-    "_type": "visualization",
-    "_source": {
-      "title": "Recipe vs Emoji vs Toast",
-      "visState": "{\"title\":\"Recipe vs Emoji vs Toast\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q=recipe).cusum() .es(q=emoji).cusum() .es(q=toast).cusum()\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "a9649480-c17e-11e6-912c-cbfd48250819",
-    "_type": "visualization",
-    "_source": {
-      "title": "Avo Users Cloud",
-      "visState": "{\"title\":\"Avo Users Cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"user.name.keyword\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "d76780b0-c15e-11e6-b8ec-f58a80978e3d",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
       }
     }
   },
@@ -113,11 +70,11 @@
     }
   },
   {
-    "_id": "67796700-c23a-11e6-b1ce-a933cba97c19",
+    "_id": "ffc40660-c239-11e6-b1ce-a933cba97c19",
     "_type": "visualization",
     "_source": {
-      "title": "Top 20 User Locations",
-      "visState": "{\"title\":\"Top 20 User Locations\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.location.keyword\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "title": "Top 3 Languages",
+      "visState": "{\"title\":\"Top 3 Languages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.lang.keyword\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "savedSearchId": "d76780b0-c15e-11e6-b8ec-f58a80978e3d",
@@ -128,11 +85,11 @@
     }
   },
   {
-    "_id": "ffc40660-c239-11e6-b1ce-a933cba97c19",
+    "_id": "67796700-c23a-11e6-b1ce-a933cba97c19",
     "_type": "visualization",
     "_source": {
-      "title": "Top 3 Languages",
-      "visState": "{\"title\":\"Top 3 Languages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.lang.keyword\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "title": "Top 20 User Locations",
+      "visState": "{\"title\":\"Top 20 User Locations\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.location.keyword\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "savedSearchId": "d76780b0-c15e-11e6-b8ec-f58a80978e3d",
@@ -158,11 +115,96 @@
     }
   },
   {
+    "_id": "7fa1ce30-c3bb-11e6-be90-0d4b7bea5aa3",
+    "_type": "visualization",
+    "_source": {
+      "title": "Recipe vs Emoji vs Toast",
+      "visState": "{\"title\":\"Recipe vs Emoji vs Toast\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q=recipe).cusum() .es(q=emoji).cusum() .es(q=toast).cusum()\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4c5031f0-c174-11e6-abd0-4bdb49995977",
+    "_type": "visualization",
+    "_source": {
+      "title": "Tweets Count ES vs EN",
+      "visState": "{\"title\":\"Tweets Count ES vs EN\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=tweets-*, q='user.lang=en').cusum().label('EN') .es(index=tweets-*, q='user.lang=es').cusum().label('ES')\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a97b4670-36d2-11e7-bd51-05681ebc6703",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Text Terms",
+      "visState": "{\"title\":\"Top Text Terms\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"text.stop_analyzed\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"tweets-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b32f7280-36d3-11e7-bd51-05681ebc6703",
+    "_type": "visualization",
+    "_source": {
+      "title": "word cloud",
+      "visState": "{\"title\":\"word cloud\",\"type\":\"tagcloud\",\"params\":{\"maxFontSize\":72,\"minFontSize\":18,\"orientation\":\"single\",\"scale\":\"linear\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"text.stop_analyzed\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"tweets-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"meta\":{\"index\":\"tweets-*\",\"key\":\"text.stop_analyzed\",\"value\":\"dangerdanger\",\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"text.stop_analyzed\":{\"query\":\"dangerdanger\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "a9649480-c17e-11e6-912c-cbfd48250819",
+    "_type": "visualization",
+    "_source": {
+      "title": "Avo Users Cloud",
+      "visState": "{\"title\":\"Avo Users Cloud\",\"type\":\"tagcloud\",\"params\":{\"maxFontSize\":72,\"minFontSize\":18,\"orientation\":\"single\",\"scale\":\"linear\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"user.name.keyword\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "d76780b0-c15e-11e6-b8ec-f58a80978e3d",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"tweets-*\",\"key\":\"text.stop_analyzed\",\"negate\":false,\"value\":\"dangerdanger\"},\"query\":{\"match\":{\"text.stop_analyzed\":{\"query\":\"dangerdanger\",\"type\":\"phrase\"}}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "f5323310-373d-11e7-a84c-ef94d5c74259",
+    "_type": "visualization",
+    "_source": {
+      "title": "Tweets Per Minute Metric",
+      "visState": "{\"title\":\"Tweets Per Minute Metric\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metricAgg\",\"params\":{}},\"customLabel\":\"Tweets Per Minute\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"tweets-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
     "_id": "ac4917d0-c173-11e6-986a-99f3d72760fe",
     "_type": "visualization",
     "_source": {
       "title": "AvoTweets Count",
-      "visState": "{\"title\":\"AvoTweets Count\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}}],\"listeners\":{}}",
+      "visState": "{\"title\":\"AvoTweets Count\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Tweets\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "d76780b0-c15e-11e6-b8ec-f58a80978e3d",
