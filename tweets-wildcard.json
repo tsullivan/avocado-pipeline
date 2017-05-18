@@ -1,5 +1,5 @@
 {
-  "index_patterns": "tweets-*",
+  "template": "tweets-*",
   "settings": {
     "analysis": {
       "analyzer": {
