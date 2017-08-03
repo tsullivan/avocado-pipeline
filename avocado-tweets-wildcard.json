@@ -1,5 +1,5 @@
 {
-  "template": "tweets-*",
+  "template": "avocado-tweets-*",
   "settings": {
     "analysis": {
       "analyzer": {
@@ -15,7 +15,7 @@
     }
   },
   "mappings": {
-    "avocado": {
+    "doc": {
       "properties": {
         "coordinates": {
           "properties": {
